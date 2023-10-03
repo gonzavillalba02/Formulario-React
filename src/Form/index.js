@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Box, Typography } from "@mui/material";
-import { LogoSpace, FormSpace, Img } from "./styles";
+import { LogoSpace, FormSpace, Img, StepperSpace } from "./styles";
 import DatosUsuario from "./DatosUsuario";
 import DatosPersonales from "./DatosPersonales";
 import DatosEntrega from "./DatosEntrega";
@@ -35,11 +35,12 @@ const Form = () => {
       }}
     >
       <LogoSpace>
-        <Img src={"/favicon.png"} />
-        <Typography variant="h3">AluraFood</Typography>
+        <Img src={"/pedidos.png"} />
       </LogoSpace>
       <FormSpace>
+        <StepperSpace>
         {(step<3) && <Stepper step={step}/>}
+        </StepperSpace>
         {steps[step]}
       </FormSpace>
     </Box>
