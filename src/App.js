@@ -1,6 +1,6 @@
 import { MainSpace, ImageSpace, FormSpace } from "./styles";
 import Form from "./Form";
-import {Footer} from "./Footer";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Form />
       </FormSpace>
     </MainSpace>
-    <Footer src={"/footer-mobile.png"}/>
+    <Footer />
     </>
   );
 }
