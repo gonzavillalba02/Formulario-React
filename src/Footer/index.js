@@ -18,6 +18,10 @@ const Detalle = styled.div`
     color: white;
     padding: 2rem;
     font-family: 'Comfortaa', cursive;
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
 `
 
 const Footer = () => {
