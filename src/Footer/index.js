@@ -7,14 +7,12 @@ const Img = styled.img`
     margin: 0;
     @media (max-width: 768px) {
         display: block;
-        line-height: 0px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
-        left: 0;
         width: 100%;
-        margin-bottom: -70px;
     }
 `
+
 
 const Footer = () => {
     return(<>
