@@ -12,6 +12,7 @@ const Img = styled.img`
         bottom: 0;
         left: 0;
         width: 100%;
+        margin-bottom: -40px;
     }
 `
 
@@ -20,7 +21,7 @@ const Detalle = styled.div`
     height: 1rem;
     text-align: center;
     color: white;
-    padding: 2rem;
+    padding: 4rem 0 2rem 0;
     font-family: 'Comfortaa', cursive;
     display: none;
     @media (max-width: 768px) {
@@ -31,7 +32,7 @@ const Detalle = styled.div`
 const Footer = () => {
     return(<>
         <Img src={"/footer-mobile.png"}/>
-        <Detalle>Desarrollado por Gonzalo Emiliano Villalba</Detalle>
+        <Detalle>Desarrollado por Gonzalo Emiliano Villalba.</Detalle>
     </>)
 
 
