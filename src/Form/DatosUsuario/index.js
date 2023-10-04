@@ -14,8 +14,8 @@ const DatosUsuario = ({updateStep}) => {
     valid: null
   })
 
-  const [errorEmail, setErrorEmail] = useState(false)
-  const [errorPassword, setErrorPassword] = useState(false)
+  const [errorEmail, setErrorEmail] = useState(null)
+  const [errorPassword, setErrorPassword] = useState(null)
 
   return (
     <Box
@@ -30,11 +30,15 @@ const DatosUsuario = ({updateStep}) => {
       onSubmit={ (e) => {
           e.preventDefault();
           if(email.valid && password.valid){
-            console.log("siguiente formulario")
             console.log(email, password)
             updateStep(1)
           }else{
-            console.log("no hacer nada")
+            if(errorEmail !== false){
+              setErrorEmail(true)
+            }
+            if(errorPassword !== false){
+              setErrorPassword(true)
+            }
           }
       }}
     >

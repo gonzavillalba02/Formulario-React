@@ -21,11 +21,18 @@ const DatosEntrega = ({updateStep}) => {
       onSubmit={(e) => {
         e.preventDefault()
         if(address.valid && city.valid && province.valid){
-          console.log("siguiente formulario")
           console.log(address, city, province)
           updateStep(3)
         }else{
-          console.log("no hacer nada")
+          if(address.valid !== true){
+            setAdress({value: address.value, valid: false})
+          }
+          if(city.valid !== true){
+            setCity({value: city.value, valid: false})
+          }
+          if(province.valid !== true){
+            setProvince({value: province.value, valid: false})
+          }
         }
       }}
     >

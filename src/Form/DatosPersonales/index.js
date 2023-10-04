@@ -21,11 +21,18 @@ const DatosPersonales = ({updateStep}) => {
       onSubmit={(e) => {
         e.preventDefault()
         if(name.valid && lastname.valid && phone.valid){
-          console.log("siguiente formulario")
           console.log(name, lastname, phone)
           updateStep(2)
         }else{
-          console.log("no hacer nada")
+          if(name.valid !== true){
+            setName({value: name.value, valid: false})
+          }
+          if(lastname.valid !== true){
+            setLastname({value: lastname.value, valid: false})
+          }
+          if(phone.valid !== true){
+            setPhone({value: phone.value, valid: false})
+          }
         }
       }}
     >

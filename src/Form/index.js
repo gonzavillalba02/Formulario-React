@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { LogoSpace, FormSpace, Img, StepperSpace } from "./styles";
 import DatosUsuario from "./DatosUsuario";
 import DatosPersonales from "./DatosPersonales";
