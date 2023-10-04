@@ -5,7 +5,8 @@ const Img = styled.img`
     width: 100%;
     display: none;
     @media (max-width: 768px) {
-        display: block;
+        display: initial;
+        line-height: 0px;
         position: absolute;
         bottom: 0px;
     }
@@ -13,7 +14,7 @@ const Img = styled.img`
 
 const Detalle = styled.div`
     background: #213142;
-    height: 3rem;
+    height: 1rem;
     text-align: center;
     color: white;
     padding: 2rem;
