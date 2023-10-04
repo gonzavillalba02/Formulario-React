@@ -4,11 +4,14 @@ import React from "react";
 const Img = styled.img`
     width: 100%;
     display: none;
+    margin: 0;
     @media (max-width: 768px) {
-        display: inline-block;
+        display: block;
         line-height: 0px;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 `
 
