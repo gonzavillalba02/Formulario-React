@@ -6,6 +6,13 @@ const Img = styled.img`
   width: 70%;
 `;
 
+const Texto = styled.h2`
+  text-align: center;
+  width: 100%;
+  padding: 2% 0;
+  font-family: 'Comfortaa', cursive;
+`;
+
 const Complete = () => {
   return (
     <Box
@@ -16,7 +23,7 @@ const Complete = () => {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h4">¡Gracias por tu registro!</Typography>
+      <Texto>¡Gracias por tu registro!</Texto>
       <Img src="/complete.png" />
     </Box>
   );
